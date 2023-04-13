@@ -24,10 +24,9 @@ createApp({
       if(isNext)this.counter++;
       else this.counter--;
 
-      if(this.counter === 5) this.counter = 0;
-      if(this.counter < 0) this.counter = 4
+      if(this.counter === this.images.length) this.counter = 0;
+      if(this.counter < 0) this.counter = this.images.length - 1;
 
-      //ho messo dei numeri fissi perchè il this.images.lenght non me lo prendeva e quando ho messo i numeri ha iniziato a funzionare
     }
 
   }
